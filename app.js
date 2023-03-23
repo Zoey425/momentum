@@ -64,6 +64,9 @@ function handleWindowResize(){
   document.body.style.backgroundColor = "yellow";
 }
 
+function handWindowCopy() {
+  alert("copier!")
+}
 
 // hOne.addEventListener("click" , handleTitleClick);
 // 위의 줄 코드를 onclick으로 변경 가능
@@ -72,4 +75,4 @@ hOne.addEventListener("mouseenter", handleMouseEnter);
 hOne.addEventListener("mouseleave", handleMouseLeave);
 
 window.addEventListener("resize", handleWindowResize);
-
+window.addEventListener("copy", handWindowCopy);
