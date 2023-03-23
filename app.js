@@ -68,6 +68,15 @@ function handWindowCopy() {
   alert("copier!")
 }
 
+
+function handleWindowOffline() {
+  alert("NO WIFI CONNECTION")
+}
+
+function handleWindowOnline() {
+  alert("ALL GOOD")  
+}
+
 // hOne.addEventListener("click" , handleTitleClick);
 // 위의 줄 코드를 onclick으로 변경 가능
 hOne.onClick = handleTitleClick;
@@ -76,3 +85,8 @@ hOne.addEventListener("mouseleave", handleMouseLeave);
 
 window.addEventListener("resize", handleWindowResize);
 window.addEventListener("copy", handWindowCopy);
+
+
+// wifi
+window.addEventListener("offline", handleWindowOffline);
+window.addEventListener("online", handleWindowOnline);
