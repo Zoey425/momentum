@@ -60,6 +60,16 @@ function handleMouseLeave() {
   hOne.innerText = "Mouse is gone!"
 }
 
-hOne.addEventListener("click" , handleTitleClick);
+function handleWindowResize(){
+  document.body.style.backgroundColor = "yellow";
+}
+
+
+// hOne.addEventListener("click" , handleTitleClick);
+// 위의 줄 코드를 onclick으로 변경 가능
+hOne.onClick = handleTitleClick;
 hOne.addEventListener("mouseenter", handleMouseEnter);
 hOne.addEventListener("mouseleave", handleMouseLeave);
+
+window.addEventListener("resize", handleWindowResize);
+
