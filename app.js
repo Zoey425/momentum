@@ -99,15 +99,28 @@ const h1 = document.querySelector("div.nice:first-child h1");
 
 
 
+// function handleTitleClick() {
+//   const currentColor = h1.style.color;
+//   let newColor;
+//   if(currentColor === 'blue') {
+//     newColor = "tomato";
+//   } else {
+//     newColor = "blue";
+//   }
+//   h1.style.color = newColor;
+// }
+
 function handleTitleClick() {
-  const currentColor = h1.style.color;
-  let newColor;
-  if(currentColor === 'blue') {
-    newColor = "tomato";
+    const clickedClass = "clicked"
+  if(h1.className === clickedClass){
+    h1.className = "";
   } else {
-    newColor = "blue";
+    h1.className = clickedClass;
   }
-  h1.style.color = newColor;
+  // 이렇게 string 'active'를 중복 사용하고 있는데 이건 error가 일어날 확률이 높다.
+  // active는 내가 지어낸 이름이다. 그래서 계속 사용하게 되면 오타 등 오류가 발생하니까 변수를 만들어준다.
+  // 이 코드는 클래스를 말 그대로 replace 시켜주는거지 add시키는 코드는 아니다. 
+  // 그래서 기존 클래스명은 남겨주고 추가 시켜주는걸 해보려고 한다!
 }
 
 h1.addEventListener("click", handleTitleClick)
