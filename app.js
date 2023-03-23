@@ -111,8 +111,8 @@ const h1 = document.querySelector("div.nice:first-child h1");
 // }
 
 function handleTitleClick() {
-    const clickedClass = "clicked"
-    
+  // const clickedClass = "clicked"
+
   // if(h1.className === clickedClass){
   //   h1.className = "";
   // } else {
@@ -126,16 +126,20 @@ function handleTitleClick() {
   // --------------------------------------
   // --------------------------------------
 
-   if(h1.classList.contains(clickedClass)){
-    h1.classList.remove(clickedClass);
-  } else {
-    h1.classList.add(clickedClass);
-  }
+  //  if(h1.classList.contains(clickedClass)){
+  //   h1.classList.remove(clickedClass);
+  // } else {
+  //   h1.classList.add(clickedClass);
+  // }
 
   // classList and className
   // classList : 말 그대로, class들의 목록으로 작업할 수 있게 허용 
   // className : 그냥 모든걸 교체, 이전에 class들은 상관하지 않고.
 
+  // --------------------------------------
+  // --------------------------------------
+  // Toggle
+  h1.classList.toggle("clicked");
 
 }
 
