@@ -1,0 +1,13 @@
+h1 {
+  color: cornflowerblue;
+}
+
+
+.clicked {
+  color: rebeccapurple;
+  transition: color 0.5s ease-in-out;
+}
+
+.nice-font {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
