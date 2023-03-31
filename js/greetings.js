@@ -37,7 +37,7 @@ function paintGreetings() {
 
 // local storage에 username 값의 유무확인
 const savedUsername = localStorage.getItem(USERNAME_KEY);
-console.log(savedUsername);
+// console.log(savedUsername);
 
 // 앱이 실행되면, localStorage에서 savedUsername를 얻으려고 시도한다.
 
