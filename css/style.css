@@ -164,14 +164,47 @@ img{
 
 .todo_list{
   background-color: #fff;
-  padding: 20px;;
-  width: 50%;
-  height: auto;
+  height: 0px;
   position: absolute;
   right: 5%;
-  bottom: 10%;
+  bottom: 8%;
+  overflow: hidden;
 }
 
-.close_btn{
-  cursor: pointer;
+
+#todo-form{
+  margin:20px 0px 40px 0px
+}
+
+ul#todo-list li{
+  text-align: left;
+  /* display: flex; */
+  position: relative;
+  padding: 15px 5px;
+}
+
+ul#todo-list li button{
+  position: absolute;
+  right: 0;
+}
+
+p.close_btn{
+  background-color: rgb(224, 191, 25);
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+
+h4.title{
+  text-align: left;
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-top: 25px;
 }

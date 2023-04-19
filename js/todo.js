@@ -7,8 +7,12 @@ const toDoCBtn = document.querySelector("p.close_btn");
 
 // 버튼 클릭시 나오게하기
 function showEvent(){
-  toDoListWarp.classList.remove(HIDDEN_CLASSNAME);
-  toDoListWarp.style.transition = "all 2s ease-in-out";
+  toDoListWarp.style.height = '500px';
+  toDoListWarp.style.padding = '20px';
+  toDoListWarp.style.transition = "all 0.5s ease";
+  toDoBtn.style.opacity = "0.8";
+ // toDoListWarp.classList.remove(HIDDEN_CLASSNAME);
+
 }
 
 toDoBtn.addEventListener("click", showEvent);
@@ -16,8 +20,12 @@ toDoBtn.addEventListener("click", showEvent);
 
 //버튼 클릭시 닫기
 function closeEvent(){
-  toDoListWarp.classList.add(HIDDEN_CLASSNAME);
-  toDoListWarp.style.transition = "all 2s ease-in-out";
+  toDoListWarp.style.height = '0px';
+  toDoListWarp.style.padding = '0px';
+  toDoListWarp.style.transition = "all 0.5s ease";
+  toDoBtn.style.opacity = "1";
+  // toDoListWarp.classList.add(HIDDEN_CLASSNAME);
+
 }
 
 toDoCBtn.addEventListener("click", closeEvent)
@@ -49,7 +57,7 @@ function paintToDo(newTodo) {
   span.innerText = newTodo.text;
 
   const button = document.createElement("button");
-  button.innerText = "❌";
+  button.innerHTML = "✓";
   button.addEventListener("click", deleteToDo)
   li.appendChild(span);
   li.appendChild(button);
