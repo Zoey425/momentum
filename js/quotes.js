@@ -17,27 +17,27 @@ const quotes = [
   },
   {
     quote:"Success seems to be connected with action. Successful people keep moving.",
-    author : "now06"
+    author : "Conrad Hilton"
   },
   {
     quote:"In order to succeed, we must first believe that we can.",
-    author : "now07"
+    author : "Nikos Kazantzakis"
   },
   {
     quote:"Do not be afraid to give up the good to go for the great.",
-    author : "now08"
+    author : "John D. Rockefeller"
   },
   {
     quote:"If you cannot fly then run. If you cannot run, then walk. And, if you cannot walk, then crawl, but whatever you do, you have to keep moving forward.",
-    author : "now09"
+    author : "Martin Luther King JR"
   },
   {
     quote:"Our greatest weakness lies in giving up. The most certain way to succeed is always to try just one more time.",
-    author : "now10"
+    author : "Thomas A. Edison"
   },
   {
     quote:"Money is like gasoline during a road trip. You do not want to run out of gas on your trip, but you’re not doing a tour go gas stations.",
-    author : "now11"
+    author : "Tim O'Reilly"
   },
 ];
 
