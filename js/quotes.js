@@ -1,23 +1,19 @@
 const quotes = [
   {
-    quote:"Better things are coming",
-    author : "now01"
-  },
-  {
     quote:"You don’t grow when you are comfortable.",
-    author : "now02"
+    author : "Someone"
   },
   {
     quote:"Success usually comes to those who are too busy to be looking for it.",
-    author : "now03"
+    author : "Henry David Thoreau"
   },
   {
     quote:"The way to get started is to quit talking and begin doing.",
-    author : "now04"
+    author : "Walt Disney"
   },
   {
     quote:"Success is not the key to happiness. Happiness is the key to success. If you love what you are doing, you will be successful.",
-    author : "now05"
+    author : "Albert Schweitzer"
   },
   {
     quote:"Success seems to be connected with action. Successful people keep moving.",

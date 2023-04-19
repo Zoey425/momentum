@@ -1,3 +1,177 @@
+
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+  background-repeat : no-repeat;
+  background-size : cover;
+  background-position: center;
+  background-attachment: fixed;
+  width: 100vw;
+  height: 100vh;
+  color: #333;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+input[type="text"],
+input[type="password"] {
+  height: auto;  /* 높이 초기화 */
+  line-height: normal;  /* line-height 초기화 */
+  padding: .8em .5em;  /* 여백 설정 */
+}
+
+img{
+  width: 100%;
+  height: 100%;
+}
+
+
+/* 
+---------------------------------------------------------------------
+---------------------------------------------------------------------
+ */
+
 .hidden {
   display: none;
+}
+
+#wrap {
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  height: 100vh;
+}
+
+
+.form {
+  position: relative;
+  padding-top: 25%;
+  padding-bottom: 30px;
+}
+
+.form input[type=text]:first-child{
+  border: none;
+  opacity: 0.7;
+  padding: 1rem 6rem;
+  border-radius: 0.7rem;
+  text-align: center;
+  box-shadow: 1px 5px 10px 5px rgba(55, 55, 55, 0.475);
+  background: #d9d9d9;
+}
+
+
+.form input[type=text]::placeholder{
+  font-size: .8rem;
+  opacity: 1;
+}
+
+#greeting{
+  position: absolute;
+  top: 4%;
+  right: 2%;
+  font-size: 0.9rem;
+}
+
+
+/* Clock */
+
+#clock{
+  font-size: 9rem;
+  font-weight: 200;
+  margin-bottom: 20px;
+  color: black;
+}
+
+
+#todo-form input[type=text]{
+  border: 1px solid #ddd;
+  padding: 1rem 6rem;
+  border-radius: 0.7rem;
+}
+
+
+
+#quote{
+  margin-top: 20px;
+}
+
+#quote span:first-child{
+  text-align: center;
+  display: block;
+  font-size: .9rem;
+}
+
+#quote span:last-child{
+  margin-top: 5px;
+  display: block;
+  font-size: .8rem;
+  opacity: 0.8;
+}
+
+.bottom_list{
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 4%;
+  right: 5%;
+}
+
+.bottom_list .todo_btn{
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.todo_list{
+  background-color: #fff;
+  padding: 20px;;
+  width: 50%;
+  height: auto;
+  position: absolute;
+  right: 5%;
+  bottom: 10%;
+}
+
+.close_btn{
+  cursor: pointer;
 }

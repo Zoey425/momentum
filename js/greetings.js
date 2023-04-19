@@ -28,7 +28,7 @@ function onSubmit(event){
 
 function paintGreetings() {
   const username = localStorage.getItem(USERNAME_KEY);
-  greeting.innerText = `Hello ${username}`;
+  greeting.innerText = `반가워요 ${username}님`;
   greeting.classList.remove(HIDDEN_CLASSNAME);
 }
 // greeting안에 text가 들어가고 
@@ -50,3 +50,19 @@ if(savedUsername === null) {
   // show the greetings
   paintGreetings();
 }
+
+
+const input = document.querySelector('.form input[type="text"]');
+
+input.addEventListener("focus", (event) => {
+  event.target.style.background = "white";
+  event.target.style.opacity = 1;
+  event.target.style.borderRadius = "0rem";
+})
+
+
+input.addEventListener("blur", (event) => {
+  event.target.style.background = "#d9d9d9";
+  event.target.style.opacity = 0.8;
+  event.target.style.borderRadius = "0.7rem";
+});

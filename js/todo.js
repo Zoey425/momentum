@@ -1,7 +1,26 @@
 const toDoForm = document.getElementById("todo-form");
 const toDoInput = toDoForm.querySelector("#todo-form input");
 const toDoList = document.getElementById("todo-list");
+const toDoListWarp = document.querySelector("div.todo_list");
+const toDoBtn = document.querySelector("p.todo_btn");
+const toDoCBtn = document.querySelector("p.close_btn");
 
+// 버튼 클릭시 나오게하기
+function showEvent(){
+  toDoListWarp.classList.remove(HIDDEN_CLASSNAME);
+  toDoListWarp.style.transition = "all 2s ease-in-out";
+}
+
+toDoBtn.addEventListener("click", showEvent);
+
+
+//버튼 클릭시 닫기
+function closeEvent(){
+  toDoListWarp.classList.add(HIDDEN_CLASSNAME);
+  toDoListWarp.style.transition = "all 2s ease-in-out";
+}
+
+toDoCBtn.addEventListener("click", closeEvent)
 
 const TODOS_KEY = "todos";
 let toDos = [];
